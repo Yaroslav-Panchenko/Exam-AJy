@@ -1,0 +1,372 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+
+
+
+// --------------------------------------------
+// ------------------Header--------------------
+// --------------------------------------------
+
+.header {
+    background-color: $header-bg;
+}
+.navbar {
+    padding: 16px 0;
+}
+.navbar .navbar-nav .menu-item {
+    margin-left: 20px;
+    .nav-link {
+        font: 400 1.125rem $roboto;
+        color: $white;
+        &:hover {
+            color: $red;
+        }
+    }
+}
+.container .navbar .navbar-nav .current-menu-item a {
+    color: $red;
+}
+
+
+// --------------------------------------------
+// ------------------Footer--------------------
+// --------------------------------------------
+.clients {
+    background-color: $red;
+    padding: 64px 0;
+    .clients-title {
+        font: 300 2.25rem $roboto;
+        color: $white;
+        margin-bottom: 50px;
+    }
+}
+.contact {
+    color: $white;
+    .contact-wrapper {
+        background-color: $bgc;
+        padding-top: 100px;
+    }
+    .widget-title {
+        font: 300 2.25rem $roboto;
+        margin-bottom: 30px;
+    }
+    .footer-address {
+        margin-bottom: 0;
+        font: 300 1.125rem $roboto;
+        p {
+            margin-bottom: 20px;
+        }
+        div {
+            span{
+                display: inline-block;
+                margin-right: 20px;
+                margin-bottom: 20px;
+            }
+        }   
+    
+    }
+}
+.footer-map iframe{
+    width: 300px;
+}
+.footer-form {
+    li {
+        margin-bottom: 20px;
+    }
+}
+.wpcf7 input[type=submit] {
+    border: none;
+    display: inline-block;
+    background-color: $red;
+    color: $white;
+    font:700 1.5rem $roboto;
+    &:hover {
+        background-color: darken($red, 10%);
+    } 
+}
+.footer-logo {
+    background-color: $header-bg;
+    padding: 30px 0;
+}
+.footer-copy {
+    background-color: $red;
+    padding: 25px 0;
+    font: 300 1.125rem $roboto;
+    color: $white;
+}
+
+// --------------------------------------------
+// ------------------Fron page-----------------
+// --------------------------------------------
+
+.main {
+    background-color: $red;
+    padding: 100px 30px 40px 30px;
+    .main-img {
+        margin-bottom: 80px;
+    }
+    a {
+        color: $white;
+        font-size: 2rem;
+        display: block;
+        margin: 0 auto;
+        &:hover {
+            color: darken($white, 30%)
+        }
+    }
+}
+
+.main-description {
+    color: $white;
+    h2 {
+        font: 700 3.75rem $roboto;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+        span {
+            color: $header-bg;
+        }
+    }
+    p {
+        font: 400 3rem $roboto;
+        margin-bottom: 40px;
+        span{
+            font: 400 2rem $roboto;
+        }
+    }
+    p:last-child {
+        font: 300 1.5rem $roboto;
+    }   
+}
+
+.welcome {
+    padding: 50px 30px 0 30px;
+    .welcome-description {
+        color: $welcome;
+        h2 {
+            font: 700 2.25rem $roboto;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+        p {
+            font: 300 1.125rem/24px $roboto;
+            span {
+                color: $red;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.offering {
+    background-color: $header-bg;
+    padding: 60px 0;
+    color: $white;
+    .offering-title {
+        font: 300 2.25rem $roboto;
+        margin-bottom: 20px;
+    }
+    .offering-description {
+        font: 400 1.125rem $roboto;
+        margin-bottom: 60px;
+    }
+    .offering-item {
+        max-width: 300px;
+        img {
+            margin: 30px auto;
+            max-width: 136px;
+            
+        }
+        h3 {
+            font: 700 1.875rem $roboto;
+            margin-bottom: 20px;
+        }
+        p {
+            font: 400 1.125rem $roboto;
+        }
+    }
+}
+
+.works {
+    padding: 80px 0;
+    .works-title {
+        font: 700 2.25rem $roboto;
+        margin-bottom: 30px;
+    }
+    .works-description {
+        font: 400 1.5rem $roboto; 
+        margin-bottom: 40px;
+    }
+}
+.category-btn {
+    margin: 30px;
+    button {
+        font: 300 1.5rem $roboto;
+        border: none;
+        background-color: $white;
+
+        &:hover {
+            color: $red;
+        }
+    }
+}
+.active {
+    color: $red;
+}
+.work-item {
+    img {
+        position: relative;
+        width: 100%; 
+    }
+    .works-overlay {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 16px;
+        right: 16px;
+        bottom: 0;
+        border: $border;
+        transition: .2s;
+
+        &:hover {
+            opacity: 1;
+            transition: .2s;
+        }
+        a {
+            width: 100%;
+            height: 100%;
+            border: $border2;
+            font: 700 1.875rem $roboto; 
+            text-transform: uppercase;
+            color: $black;
+        }
+    }
+}
+
+// --------------------------------------------
+// ------------------Blog---------------------
+// --------------------------------------------
+
+.blog-title {
+    background: url('../img/image.png') no-repeat center top/cover;
+    .blog-wrapper {
+        background-color: $bgc;
+        padding: 90px 0;
+        h1 {
+            color: $white;
+            font: 500 2.25rem $roboto;
+            text-align: center;
+        }
+    }
+}
+.blog-wrap {
+    padding: 50px 0;
+}
+
+.posts-list {
+    .post-item {
+        max-width: 360px;
+        position: relative;
+        padding: 10px;
+        img {
+           max-height: 200px;
+        }
+        .article-link {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            top:0;
+            right: 0;
+            background-color: $white;
+            color: $black;
+            &:hover {
+                color: $red;
+            }
+            span {
+                font-size: 30px;
+            }
+        }
+        .entry-content {
+            padding: 16px;
+            border: 1px solid $black;
+            h2 {
+                font: 500 1rem $roboto;
+                margin-bottom: 15px;
+                color: $red;
+                &:hover {
+                    color: darken($red, 30%);
+                }
+            }
+            p {
+                font: 400 0.563rem/15px $roboto;
+            }
+        }
+        .post-meta {
+            border: 1px solid $black;
+            padding: 10px 0;
+            font: 400 0.75rem $roboto;
+        } 
+    }
+}
+
+.understrap-read-more-link {
+    display: none;
+}
+
+.widget {
+    background-color: $aside;
+    padding: 25px;
+    margin-bottom: 25px;
+    .widget-title {
+        color: $white;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+    }
+    input {
+        background-color: $aside;
+    }
+}
+.widget_categories {
+    .cat-item {
+        font: 400 1.375rem $roboto;
+        a {
+            color: $white;
+            &:hover {
+                color: $red;
+            }
+        }
+    }
+    
+}
+.widget_newsletterwidget {
+    color: $white;
+    .tnp-widget {
+        margin-top: 20px;
+        label {
+            display: none;
+        }
+        .tnp-submit {
+            background-color: $red;
+            &:hover {
+                background-color: darken($red, 10%);
+            }
+        }
+    }
+}
+
+
+
+
+// --------------------------------------------
+// ------------------Media query-----------------
+// --------------------------------------------
+
+
+@media (min-width: 768px) {
+  .footer-map iframe{
+      width: 500px;
+      height: 400px;
+  }
+}

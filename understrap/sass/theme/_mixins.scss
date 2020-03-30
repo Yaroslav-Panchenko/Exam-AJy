@@ -1,0 +1,31 @@
+@mixin section  {
+  background-color: $bg-color;
+  padding: 50px 0;
+}
+
+@mixin footer-h3 {
+  font: 400 1.125rem $font;
+  color: $text-white;
+  margin-bottom: 25px;
+}
+
+@mixin btn {
+  color: $text-white;
+  padding: 4px 6px;
+  background-color: $bg-black;
+  border-bottom: 3px solid $bg-yellow;
+}
+
+@mixin arrow {
+  position: absolute;
+  top: calc(50% - 31px);
+  z-index: 9;
+  padding: 7px 7px;
+  background-color: $text-black;
+  cursor: pointer;
+  display: none;
+  opacity: 1;
+  &:hover {
+    opacity: 0.7;
+  }
+}
